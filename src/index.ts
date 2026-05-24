@@ -14,13 +14,13 @@ app.use(express.json());
 // penambahan untuk setiap router
 
 // category route
-app.use('/api', categoryRouter);
+app.use(categoryRouter);
 
 // event route
-app.use('/api', eventRouter);
+app.use(eventRouter);
 
 // speaker route
-app.use('/api', speakerRouter);
+app.use(speakerRouter);
 
 
 // jalankan server
